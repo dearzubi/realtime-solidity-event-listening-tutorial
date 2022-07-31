@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/dearzubi/realtime-solidity-event-listening-tutorial#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "ethereum-event-processor": "^5.1.2",
+    "hardhat-abi-exporter": "^2.10.0",
     "web3": "^1.7.4"
   },
   "devDependencies": {

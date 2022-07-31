@@ -5,6 +5,7 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const fs = require('fs')
 
 async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
@@ -19,6 +20,13 @@ async function main() {
   await lock.deployed();
 
   console.log("Lock with 1 ETH deployed to:", lock.address);
+
+  let envfile = fs.readFileSync('.env').toString();
+
+  envfile = envfile.replace(/^.*CONTRACT_ADDRESS.*$/mg, "CONTRACT_ADDRESS="+lock.address)
+
+  fs.writeFileSync('.env', envfile)
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
