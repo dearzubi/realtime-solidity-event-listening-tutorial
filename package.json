@@ -1,0 +1,27 @@
+{
+  "name": "realtime-solidity-event-listening-tutorial",
+  "version": "1.0.0",
+  "description": "A quick demonstration project on how to listen to solidity events in a real time using a nodejs library and web3js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearzubi/realtime-solidity-event-listening-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dearzubi/realtime-solidity-event-listening-tutorial/issues"
+  },
+  "homepage": "https://github.com/dearzubi/realtime-solidity-event-listening-tutorial#readme",
+  "dependencies": {
+    "ethereum-event-processor": "^5.1.2",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.1"
+  }
+}
